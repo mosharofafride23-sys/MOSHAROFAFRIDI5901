@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=640, user-scalable=yes"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  "darkMode": "class",
+  "theme": {
+    "extend": {
+      "colors": {
+        "tertiary-container": "#b7b2ac",
+        "on-secondary": "#3e2e04",
+        "primary-container": "#00ffff",
+        "tertiary": "#d2cec7",
+        "on-background": "#e5e2e3",
+        "surface-dim": "#131314",
+        "outline": "#99907c",
+        "surface-variant": "#353436",
+        "surface-tint": "#00ffff",
+        "surface-bright": "#3a393a",
+        "secondary": "#00ffff",
+        "on-tertiary-container": "#474540",
+        "inverse-primary": "#735c00",
+        "primary-fixed": "#ffe088",
+        "on-surface": "#e5e2e3",
+        "on-primary-fixed": "#241a00",
+        "error-container": "#93000a",
+        "surface-container-highest": "#353436",
+        "on-surface-variant": "#d0c5af",
+        "tertiary-fixed": "#e7e2db",
+        "error": "#ffb4ab",
+        "on-error": "#690005",
+        "on-tertiary": "#32302c",
+        "surface-container-lowest": "#0e0e0f",
+        "on-secondary-fixed-variant": "#574419",
+        "surface-container-low": "#1c1b1d",
+        "secondary-container": "#59461b",
+        "on-tertiary-fixed": "#1d1b17",
+        "surface-container-high": "#2a2a2b",
+        "outline-variant": "#4d4635",
+        "secondary-fixed": "#fcdfa5",
+        "primary": "#00ffff",
+        "inverse-surface": "#e5e2e3",
+        "secondary-fixed-dim": "#00ffff",
+        "on-primary-fixed-variant": "#574500",
+        "surface-container": "#201f21",
+        "on-secondary-fixed": "#251a00",
+        "on-tertiary-fixed-variant": "#494642",
+        "on-primary": "#3c2f00",
+        "on-error-container": "#ffdad6",
+        "background": "#131314",
+        "surface": "#131314",
+        "inverse-on-surface": "#313031",
+        "primary-fixed-dim": "#00ffff",
+        "on-secondary-container": "#d0b57f",
+        "tertiary-fixed-dim": "#cbc6bf",
+        "on-primary-container": "#554300"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.125rem",
+        "lg": "0.25rem",
+        "xl": "0.5rem",
+        "full": "0.75rem"
+      },
+      "spacing": {
+        "margin": "1.5rem",
+        "gutter": "1rem",
+        "space-lg": "1.5rem",
+        "space-sm": "0.5rem",
+        "space-xs": "0.25rem",
+        "space-xl": "2.5rem",
+        "space-md": "1rem"
+      },
+      "fontFamily": {
+        "body-md": ["Hanken Grotesk"],
+        "body-sm": ["Hanken Grotesk"],
+        "body-lg": ["Hanken Grotesk"],
+        "label-caps": ["Hanken Grotesk"],
+        "title-sm": ["Hanken Grotesk"],
+        "headline-xl-mobile": ["Bodoni Moda"],
+        "title-md": ["Hanken Grotesk"],
+        "label-mono": ["Hanken Grotesk"],
+        "headline-xl": ["Bodoni Moda"],
+        "headline-lg": ["Bodoni Moda"],
+        "headline-lg-mobile": ["Bodoni Moda"],
+        "headline-sm": ["Bodoni Moda"]
+      },
+      "fontSize": {
+        "body-md": ["14px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400"}],
+        "body-sm": ["12px", {"lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+        "body-lg": ["16px", {"lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400"}],
+        "label-caps": ["11px", {"lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "700"}],
+        "title-sm": ["15px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "500"}],
+        "headline-xl-mobile": ["34px", {"lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+        "title-md": ["17px", {"lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "label-mono": ["12px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500"}],
+        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "500"}],
+        "headline-lg-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "500"}],
+        "headline-sm": ["22px", {"lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "500"}]
+      }
+    }
+  }
+};</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen relative overflow-x-hidden"><div class="fixed inset-0 pointer-events-none z-0 bg-[radial-gradient(circle_at_50%_0%,rgba(0,255,255,0.08)_0%,transparent_60%),radial-gradient(circle_at_50%_100%,rgba(223,195,140,0.03)_0%,transparent_50%)]"></div><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-2xl shadow-[0_16px_36px_-12px_rgba(0,0,0,0.85)]"><div class="h-16 max-w-[640px] mx-auto px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">MOSHAROFAFRIDI</span></div><div class="flex items-center gap-space-sm"><button aria-label="Share profile" class="p-space-xs text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" id="navShareBtn"><span class="material-symbols-outlined text-[20px]">share</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(0,255,255,0.25)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative z-10 w-full pt-16 bg-transparent"><div class="max-w-[640px] mx-auto px-margin pt-space-md pb-space-xl"><div class="flex flex-col w-full">
+<section class="relative w-full mb-space-xl">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 w-72 h-72 bg-primary-container/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="relative w-full rounded-xl bg-surface-container-low/80 backdrop-blur-2xl shadow-xl overflow-hidden p-space-lg transition-all duration-500">
+<div class="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-secondary/40 to-transparent"></div>
+<div class="flex flex-col sm:flex-row items-center sm:items-start gap-space-lg text-center sm:text-left">
+<div class="relative flex-shrink-0">
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full p-[2px] bg-gradient-to-b from-secondary via-secondary-container to-surface-dim shadow-2xl">
+<div class="w-full h-full rounded-full overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700" data-alt="Editorial portrait of MOSHAROFAFRIDI, sophisticated executive tech partner in sharp bespoke charcoal cashmere turtleneck, moody cinematic studio lighting, brushed gold atmospheric rim light, ultra luxury medium format photography with sharp specular highlights" src="https://files.catbox.moe/f9mnyr.jpg"/>
+</div>
+</div>
+<div class="absolute bottom-1 right-1 flex items-center justify-center w-5 h-5 rounded-full bg-surface-container-lowest p-0.5 shadow-md">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-60"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+</span>
+</div>
+</div>
+<div class="flex flex-col justify-center min-w-0 flex-1">
+<div class="flex items-center justify-center sm:justify-start gap-space-xs mb-1">
+<h1 class="font-headline-lg text-headline-lg sm:font-headline-xl sm:text-headline-xl text-on-surface tracking-tight leading-none">
+              MOSHAROFAFRIDI
+            </h1>
+<span class="material-symbols-outlined text-primary text-[20px] ml-1 select-none" style="font-variation-settings: 'FILL' 1;" title="Verified Global Partner">verified</span>
+</div>
+<div class="font-label-caps text-label-caps uppercase text-secondary tracking-widest mb-space-xs">
+            Welcome • to my website
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md line-clamp-2 leading-relaxed">
+            MY LOCATION COMILLA
+          </p>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-space-xs mt-space-lg pt-space-md bg-surface-container-lowest/60 rounded-lg p-space-sm">
+<div class="flex flex-col items-center justify-center py-space-xs px-1 text-center">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">All friend invite</span>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider mt-0.5">My location</span>
+</div>
+<div class="flex flex-col items-center justify-center py-space-xs px-1 text-center">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight">I am student</span>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider mt-0.5">Comilla</span>
+</div>
+<div class="flex flex-col items-center justify-center py-space-xs px-1 text-center">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Follow me</span>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider mt-0.5">Top up your website</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm mt-space-md">
+<button class="flex-1 py-3 px-space-md rounded-full bg-gradient-to-r from-secondary to-primary-container text-on-primary font-title-sm text-title-sm font-semibold flex items-center justify-center gap-space-xs shadow-lg hover:brightness-110 active:scale-[0.99] transition-all cursor-pointer" id="qrCodeProfileBtn">
+<span class="material-symbols-outlined text-[22px]">qr_code_scanner</span>
+<span>QR Code Profile</span>
+</button>
+<div class="flex items-center gap-space-xs">
+<button class="flex-1 sm:flex-initial py-3 px-space-md rounded-full bg-surface-container-high hover:bg-surface-bright text-secondary font-title-sm text-title-sm flex items-center justify-center gap-space-xs transition-colors" id="playVideoBtn">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+<span class="">Featured Video</span>
+</button>
+<button aria-label="Copy private link" class="relative group h-11 w-11 rounded-full bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" id="copyProfileLinkBtn">
+<span class="material-symbols-outlined text-[20px]" id="copyLinkIcon">link</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-space-sm w-full mb-space-xl"><div class="flex items-center justify-between px-space-xs mb-space-xs"><span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Selected Portals</span><span class="font-label-mono text-label-mono text-outline">SECURE DISPATCH • 01/10</span></div><a class="group relative w-full rounded-xl bg-surface-container-low/95 p-space-md overflow-hidden transition-all duration-300 hover:-translate-y-0.5 shadow-md" href="https://mosharofafridi.onrender.com/"><div class="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-primary to-transparent"></div><div class="flex items-center justify-between gap-space-md relative z-10"><div class="flex items-center gap-space-md min-w-0"><div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 relative overflow-hidden transition-all duration-300 group-hover:scale-105" style="background: linear-gradient(135deg, rgba(0,255,255,0.22) 0%, rgba(26,24,20,0.95) 45%, rgba(12,12,14,0.98) 100%); border: 1px solid rgba(0,255,255,0.45); box-shadow: inset 0 1px 2px rgba(0,255,255,0.4), inset 0 0 14px rgba(0,255,255,0.12), 0 6px 16px rgba(0,0,0,0.65);"><svg class="w-5 h-5 transition-transform duration-300 group-hover:scale-110 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" viewBox="0 0 24 24" fill="currentColor">
+<path d="M16.924 10.638c.328 1.488.243 3.65-1.042 5.093-1.05 1.176-2.502 1.636-4.043 1.636-1.554 0-3.32-.507-4.225-2.022-.888-1.487-.932-3.374-.632-4.887.276-1.392 1.025-3.084 2.37-3.95 1.157-.745 2.645-.873 3.978-.654 1.436.236 2.593.992 3.125 2.36.195.502.296 1.05.342 1.597h-2.183c-.042-.323-.122-.647-.282-.937-.306-.554-.874-.897-1.486-.98-1.022-.138-1.996.115-2.673.818-.846.877-.978 2.366-.864 3.513.116 1.173.655 2.332 1.688 2.89.832.45 1.83.473 2.736.155 1.092-.383 1.838-1.354 2.05-2.525.047-.258.077-.52.094-.784H12.01v-1.783h6.918c-.004 0-.004.01-.004.01zM12.012 3C7.042 3 3 7.042 3 12.012s4.042 9.012 9.012 9.012 9.012-4.042 9.012-9.012S16.982 3 12.012 3zm0 16.273c-4.004 0-7.261-3.257-7.261-7.261 0-4.004 3.257-7.261 7.261-7.261 4.004 0 7.261 3.257 7.261 7.261 0 4.004-3.257 7.261-7.261 7.261z"/>
+</svg></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors truncate">My Official Website</span></div><p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Explore bespoke sovereign assets, essays &amp; venture portfolio</p></div></div><span class="material-symbols-outlined text-secondary group-hover:text-primary group-hover:translate-x-1 transition-all text-[18px] flex-shrink-0">arrow_forward</span></div></a><a class="group relative w-full rounded-xl bg-surface-container-lowest/80 hover:bg-surface-container-low p-space-md transition-all duration-300 hover:-translate-y-0.5 shadow-sm" href="https://youtube.com/@mosharofafride-f8u?si=da9hZ2ny9fWqFNEl"><div class="flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-0"><div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 relative overflow-hidden transition-all duration-300 group-hover:scale-105" style="background: linear-gradient(135deg, rgba(0,255,255,0.18) 0%, rgba(24,22,18,0.95) 45%, rgba(12,12,14,0.98) 100%); border: 1px solid rgba(0,255,255,0.4); box-shadow: inset 0 1px 2px rgba(0,255,255,0.35), inset 0 0 12px rgba(0,255,255,0.1), 0 5px 14px rgba(0,0,0,0.6);"><svg class="w-5 h-5 transition-transform duration-300 group-hover:scale-110 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" fill="none" viewbox="0 0 24 24"><path d="M21.58 7.19a2.76 2.76 0 0 0-1.94-1.96C17.92 4.75 12 4.75 12 4.75s-5.92 0-7.64.48A2.76 2.76 0 0 0 2.42 7.19C1.94 8.93 1.94 12 1.94 12s0 3.07.48 4.81a2.76 2.76 0 0 0 1.94 1.96c1.72.48 7.64.48 7.64.48s5.92 0 7.64-.48a2.76 2.76 0 0 0 1.94-1.96c.48-1.74.48-4.81.48-4.81s0-3.07-.48-4.81z" fill="#00ffff" fill-opacity="0.2" stroke="#00ffff" stroke-width="1.4"></path><polygon fill="#00ffff" points="10,15 15.5,12 10,9"></polygon></svg></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors truncate">YouTube</span></div><p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Architectural keynotes &amp; strategic sovereign macro series</p></div></div><span class="material-symbols-outlined text-secondary group-hover:text-primary group-hover:translate-x-1 transition-all text-[18px] flex-shrink-0">arrow_forward</span></div></a><a class="group relative w-full rounded-xl bg-surface-container-lowest/80 hover:bg-surface-container-low p-space-md transition-all duration-300 hover:-translate-y-0.5 shadow-sm" href="https://www.tiktok.com/@msharofafridi?_r=1&_t=ZS-9AxVWQId2KD"><div class="flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-0"><div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 relative overflow-hidden transition-all duration-300 group-hover:scale-105" style="background: linear-gradient(135deg, rgba(0,255,255,0.18) 0%, rgba(24,22,18,0.95) 45%, rgba(12,12,14,0.98) 100%); border: 1px solid rgba(0,255,255,0.4); box-shadow: inset 0 1px 2px rgba(0,255,255,0.35), inset 0 0 12px rgba(0,255,255,0.1), 0 5px 14px rgba(0,0,0,0.6);"><svg class="w-5 h-5 transition-transform duration-300 group-hover:scale-110 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" fill="none" viewbox="0 0 24 24"><path d="M16.6 5.82a4.67 4.67 0 0 1 2.9 2.05v-3.5a7.3 7.3 0 0 0-4.2-1.37h-2.1v12.2a2.8 2.8 0 1 1-2.8-2.8c.45 0 .88.1 1.26.29v-3.3a6.1 6.1 0 1 0 4.84 5.98V8.67a7.22 7.22 0 0 0 4.3 1.4v-3.1a4.68 4.68 0 0 1-4.2-1.15z" fill="#00ffff"></path></svg></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors truncate">TikTok</span></div><p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Short-form insights &amp; behind the curtain executive strategy</p></div></div><span class="material-symbols-outlined text-secondary group-hover:text-primary group-hover:translate-x-1 transition-all text-[18px] flex-shrink-0">arrow_forward</span></div></a><a class="group relative w-full rounded-xl bg-surface-container-lowest/80 hover:bg-surface-container-low p-space-md transition-all duration-300 hover:-translate-y-0.5 shadow-sm" href="https://www.facebook.com/share/1C7hH3MKkV/"><div class="flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-0"><div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 relative overflow-hidden transition-all duration-300 group-hover:scale-105" style="background: linear-gradient(135deg, rgba(0,255,255,0.18) 0%, rgba(24,22,18,0.95) 45%, rgba(12,12,14,0.98) 100%); border: 1px solid rgba(0,255,255,0.4); box-shadow: inset 0 1px 2px rgba(0,255,255,0.35), inset 0 0 12px rgba(0,255,255,0.1), 0 5px 14px rgba(0,0,0,0.6);"><svg class="w-5 h-5 transition-transform duration-300 group-hover:scale-110 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" fill="none" viewbox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.13 8.44 9.88v-6.99H7.9v-2.89h2.54V9.8c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99C18.34 21.13 22 16.99 22 12z" fill="#00ffff"></path></svg></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors truncate">Facebook</span></div><p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Official community briefings &amp; symposium recordings</p></div></div><span class="material-symbols-outlined text-secondary group-hover:text-primary group-hover:translate-x-1 transition-all text-[18px] flex-shrink-0">arrow_forward</span></div></a><a class="group relative w-full rounded-xl bg-surface-container-lowest/80 hover:bg-surface-container-low p-space-md transition-all duration-300 hover:-translate-y-0.5 shadow-sm" href="https://www.instagram.com/mosharafafride?xtok=MW1tem9ybmFiYzJ"><div class="flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-0"><div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 relative overflow-hidden transition-all duration-300 group-hover:scale-105" style="background: linear-gradient(135deg, rgba(0,255,255,0.18) 0%, rgba(24,22,18,0.95) 45%, rgba(12,12,14,0.98) 100%); border: 1px solid rgba(0,255,255,0.4); box-shadow: inset 0 1px 2px rgba(0,255,255,0.35), inset 0 0 12px rgba(0,255,255,0.1), 0 5px 14px rgba(0,0,0,0.6);"><svg class="w-5 h-5 transition-transform duration-300 group-hover:scale-110 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" fill="none" viewbox="0 0 24 24"><rect height="18" rx="5.2" stroke="#00ffff" stroke-width="1.7" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4.2" stroke="#00ffff" stroke-width="1.7"></circle><circle cx="17.2" cy="6.8" fill="#00ffff" r="1.2"></circle></svg></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors truncate">Instagram</span></div><p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Visual diary, horology &amp; daily private editorial vignettes</p></div></div><span class="material-symbols-outlined text-secondary group-hover:text-primary group-hover:translate-x-1 transition-all text-[18px] flex-shrink-0">arrow_forward</span></div></a><a class="group relative w-full rounded-xl bg-surface-container-lowest/90 hover:bg-surface-container-low p-space-md transition-all duration-300 hover:-translate-y-0.5 shadow-md" href="https://t.me/+SBhTOgAuz9QxNTY9"><div class="flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-0"><div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 relative overflow-hidden transition-all duration-300 group-hover:scale-105" style="background: linear-gradient(135deg, rgba(0,255,255,0.18) 0%, rgba(24,22,18,0.95) 45%, rgba(12,12,14,0.98) 100%); border: 1px solid rgba(0,255,255,0.4); box-shadow: inset 0 1px 2px rgba(0,255,255,0.35), inset 0 0 12px rgba(0,255,255,0.1), 0 5px 14px rgba(0,0,0,0.6);"><svg class="w-5 h-5 transition-transform duration-300 group-hover:scale-110 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" fill="none" viewbox="0 0 24 24"><path d="M21.6 3.4c-.2-.2-.5-.3-.8-.2L2.7 10.1c-.5.2-.7.7-.6 1.2.1.5.6.8 1.1.9l4.8 1.5 1.8 5.6c.1.4.5.7.9.7.3 0 .5-.1.7-.3l2.8-2.6 4.7 3.5c.3.2.6.3.9.2.3-.1.6-.4.7-.7l3.2-15.5c.1-.4 0-.8-.4-1zm-4.3 4.2l-7.3 6.6-.4-2.8 10.4-6.4-2.7 2.6z" fill="#00ffff"></path><path d="M9.8 14.5l-.3 3.6 1.8-1.7z" fill="#00ffff"></path></svg></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors truncate">Telegram</span></div><p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Exclusive VIP Dispatch • Unfiltered venture intel</p></div></div><span class="material-symbols-outlined text-secondary group-hover:text-primary group-hover:translate-x-1 transition-all text-[18px] flex-shrink-0">arrow_forward</span></div></a><a class="group relative w-full rounded-xl bg-surface-container-lowest/90 hover:bg-surface-container-low p-space-md transition-all duration-300 hover:-translate-y-0.5 shadow-md" href="https://chat.whatsapp.com/D5GElGX33X7IznjSu"><div class="flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-0"><div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 relative overflow-hidden transition-all duration-300 group-hover:scale-105" style="background: linear-gradient(135deg, rgba(0,255,255,0.18) 0%, rgba(24,22,18,0.95) 45%, rgba(12,12,14,0.98) 100%); border: 1px solid rgba(0,255,255,0.4); box-shadow: inset 0 1px 2px rgba(0,255,255,0.35), inset 0 0 12px rgba(0,255,255,0.1), 0 5px 14px rgba(0,0,0,0.6);"><svg class="w-5 h-5 transition-transform duration-300 group-hover:scale-110 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" fill="none" viewbox="0 0 24 24"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.21-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.48 1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35m-5.45 7.39h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.89 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L0 24l6.34-1.66c1.74.95 3.71 1.45 5.71 1.45h.01c6.55 0 11.89-5.33 11.89-11.89a11.82 11.82 0 0 0-3.48-8.41z" fill="#00ffff"></path></svg></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors truncate">WhatsApp</span></div><p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Private Advisory &amp; Direct VIP Desk Access</p></div></div><span class="material-symbols-outlined text-secondary group-hover:text-primary group-hover:translate-x-1 transition-all text-[18px] flex-shrink-0">arrow_forward</span></div></a><a class="group relative w-full rounded-xl bg-surface-container-lowest/80 hover:bg-surface-container-low p-space-md transition-all duration-300 hover:-translate-y-0.5 shadow-sm" href="https://www.threads.com/@mosharafafride"><div class="flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-0"><div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 relative overflow-hidden transition-all duration-300 group-hover:scale-105" style="background: linear-gradient(135deg, rgba(0,255,255,0.18) 0%, rgba(24,22,18,0.95) 45%, rgba(12,12,14,0.98) 100%); border: 1px solid rgba(0,255,255,0.4); box-shadow: inset 0 1px 2px rgba(0,255,255,0.35), inset 0 0 12px rgba(0,255,255,0.1), 0 5px 14px rgba(0,0,0,0.6);"><svg class="w-5 h-5 transition-transform duration-300 group-hover:scale-110 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" fill="none" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg"><path d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.2284 44.7431 96.8955 44.7431 96.5632 44.745C75.2936 44.745 58.6047 57.0001 54.4328 78.4387C53.4775 83.3444 53.0039 88.3582 53.0183 93.385C53.1118 126.177 74.0044 147.255 102.775 147.255C116.143 147.255 127.378 142.342 135.257 133.05C136.936 131.07 138.384 128.874 139.588 126.505L127.234 119.539C124.629 124.167 116.444 132.062 102.775 132.062C85.1278 132.062 68.919 119.349 68.2101 93.385C68.2101 93.1896 68.2101 92.9942 68.2197 92.7988C74.6288 95.8369 82.5204 97.4327 91.5647 97.4327C118.898 97.4327 134.409 82.3551 134.409 63.6669C134.409 46.5492 120.252 35.8828 97.5619 35.8828C69.043 35.8828 47.9654 54.8968 47.9654 93.385C47.9654 133.689 71.4984 156.118 102.775 156.118C119.141 156.118 133.109 149.882 142.923 138.005C148.423 131.349 152.029 122.955 153.228 113.435C153.486 111.385 153.615 109.13 153.615 106.669C153.615 104.912 153.535 103.111 153.376 101.272C150.932 100.222 146.988 99.458 141.537 88.9883ZM97.5619 82.2405C86.7327 82.2405 80.463 76.6214 80.463 67.925C80.463 59.2286 86.7327 53.6095 97.5619 53.6095C108.391 53.6095 114.661 59.2286 114.661 67.925C114.661 76.6214 108.391 82.2405 97.5619 82.2405Z" fill="#00ffff"></path></svg></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors truncate">Threads</span></div><p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Unfiltered industry dispatches, commentary &amp; rapid observations</p></div></div><span class="material-symbols-outlined text-secondary group-hover:text-primary group-hover:translate-x-1 transition-all text-[18px] flex-shrink-0">arrow_forward</span></div></a><a class="group relative w-full rounded-xl bg-surface-container-lowest/80 hover:bg-surface-container-low p-space-md transition-all duration-300 hover:-translate-y-0.5 shadow-sm" href="https://x.com/AFRIDIshgibf"><div class="flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-0"><div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 relative overflow-hidden transition-all duration-300 group-hover:scale-105" style="background: linear-gradient(135deg, rgba(0,255,255,0.18) 0%, rgba(24,22,18,0.95) 45%, rgba(12,12,14,0.98) 100%); border: 1px solid rgba(0,255,255,0.4); box-shadow: inset 0 1px 2px rgba(0,255,255,0.35), inset 0 0 12px rgba(0,255,255,0.1), 0 5px 14px rgba(0,0,0,0.6);"><svg class="w-5 h-5 transition-transform duration-300 group-hover:scale-110 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" fill="none" viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="#00ffff"></path></svg></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors truncate">X (Twitter)</span></div><p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Real-time macro economics, autonomous architecture &amp; high stakes analysis</p></div></div><span class="material-symbols-outlined text-secondary group-hover:text-primary group-hover:translate-x-1 transition-all text-[18px] flex-shrink-0">arrow_forward</span></div></a></section>
+<section class="w-full relative rounded-xl bg-surface-container-low p-space-lg shadow-xl overflow-hidden mb-space-xl">
+<div class="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-secondary/30 to-transparent"></div>
+<div class="absolute -right-8 -bottom-8 w-44 h-44 bg-secondary-container/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-full bg-gradient-to-b from-[#2a261d] to-[#121213] p-[1px] shadow-[0_6px_20px_rgba(0,0,0,0.7),inset_0_1px_1px_rgba(0,255,255,0.35)] border border-[#00ffff]/40 flex items-center justify-center mb-space-sm relative overflow-hidden group"><div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_25%,rgba(0,255,255,0.22),transparent_70%)] pointer-events-none"></div><svg class="w-5 h-5 relative z-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" fill="none" viewbox="0 0 24 24"><defs><lineargradient id="goldGrad10" x1="0%" x2="100%" y1="0%" y2="100%"><stop offset="0%" stop-color="#00ffff"></stop><stop offset="50%" stop-color="#00ffff"></stop><stop offset="100%" stop-color="#00ffff"></stop></lineargradient></defs><rect fill="#1c1a16" fill-opacity="0.6" height="15" rx="3" stroke="url(#goldGrad10)" stroke-width="1.5" width="20" x="2" y="4.5"></rect><path d="M2.5 5.5L12 12.5L21.5 5.5" stroke="url(#goldGrad10)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><circle cx="12" cy="12.5" fill="url(#goldGrad10)" r="2"></circle></svg></div>
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest mb-1">
+        GET IN TOUCH
+      </span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">
+        Send a Direct Message
+      </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mb-space-md">
+        Write your message below. It will automatically open your email app addressed to mosharofafride23@gmail.com
+      </p>
+<form class="w-full max-w-md flex flex-col sm:flex-row gap-space-xs" id="newsletterForm" onsubmit="event.preventDefault(); handleSendMessage();">
+<div class="relative flex-1">
+<input class="w-full h-11 px-space-md rounded-full bg-surface-container-lowest text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary transition-all" id="userMessage" placeholder="Write your message here..." required="" type="text"/>
+</div>
+<button class="h-11 px-space-lg rounded-full bg-gradient-to-r from-secondary to-primary-container text-on-primary font-title-sm text-title-sm font-semibold flex items-center justify-center hover:brightness-110 active:scale-[0.99] transition-all flex-shrink-0" id="subscribeBtn" type="submit">
+<span class="">Send</span>
+</button>
+</form>
+<div class="hidden font-body-sm text-body-sm text-secondary mt-space-sm flex items-center gap-1" id="newsletterSuccess">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="">Invitation dispatched to private inbox.</span>
+</div>
+</div>
+</section>
+<div class="flex items-center justify-center gap-space-sm py-space-sm opacity-60 hover:opacity-100 transition-opacity">
+<div class="h-[1px] w-12 bg-outline-variant"></div>
+<span class="font-headline-sm text-headline-sm text-secondary tracking-widest select-none">MO</span>
+<div class="h-[1px] w-12 bg-outline-variant"></div>
+</div>
+</div>
+<div aria-labelledby="qrModalTitle" aria-modal="true" class="fixed inset-0 z-[100] flex items-center justify-center px-margin py-space-lg bg-black/85 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300" id="qrModalOverlay" role="dialog">
+<div class="relative w-full max-w-sm rounded-2xl bg-surface-container-low p-space-lg shadow-2xl border border-secondary/30 transform scale-95 transition-all duration-300" id="qrModalContainer">
+<div class="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-primary to-transparent"></div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">qr_code_2</span>
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest" id="qrModalTitle">AUTHENTIC IDENTITY</span>
+</div>
+<button aria-label="Close modal" class="w-8 h-8 rounded-full bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors cursor-pointer" id="closeQrModalBtn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="p-space-sm rounded-xl bg-surface-container-lowest border border-secondary/30 shadow-[0_8px_30px_rgba(0,0,0,0.8),inset_0_0_12px_rgba(0,255,255,0.08)] mb-space-md relative group">
+<div class="w-56 h-56 rounded-lg overflow-hidden flex items-center justify-center bg-[#131314] relative">
+<img alt="Scan to Visit MOSHAROFAFRIDI Profile" class="w-full h-full object-contain p-2 rounded cursor-pointer transition-transform hover:scale-105" title="Click to Download" id="qrCodeImage" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3C/svg%3E"/>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Scan to Visit Profile</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mb-space-md">Instant encrypted access to MOSHAROFAFRIDI sovereign portfolio &amp; executive concierge.</p>
+<div class="flex flex-col sm:flex-row gap-space-sm w-full">
+  <button class="flex-1 py-2.5 px-space-md rounded-full bg-primary/10 hover:bg-primary/20 border border-primary/20 text-primary font-title-sm text-title-sm flex items-center justify-center gap-space-xs transition-colors cursor-pointer" id="downloadQrBtn">
+    <span class="material-symbols-outlined text-[18px]">download</span>
+    <span>Download QR</span>
+  </button>
+  <button class="flex-1 py-2.5 px-space-md rounded-full bg-surface-container-high hover:bg-surface-bright text-secondary font-title-sm text-title-sm flex items-center justify-center gap-space-xs transition-colors cursor-pointer" id="copyQrUrlBtn">
+    <span class="material-symbols-outlined text-[16px]">content_copy</span>
+    <span>Copy Link</span>
+  </button>
+</div>
+</div>
+</div>
+</div>
+
+<div aria-labelledby="videoModalTitle" aria-modal="true" class="fixed inset-0 z-[100] flex items-center justify-center px-margin py-space-lg bg-black/90 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300" id="videoModalOverlay" role="dialog">
+  <div class="relative w-full max-w-3xl rounded-2xl bg-surface-container-low overflow-hidden shadow-2xl border border-secondary/30 transform scale-95 transition-all duration-300" id="videoModalContainer">
+    <div class="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-primary to-transparent"></div>
+    <div class="flex items-center justify-between p-space-md bg-gradient-to-b from-black/80 to-transparent absolute top-0 left-0 right-0 z-10 pointer-events-none">
+      <span class="font-label-caps text-label-caps uppercase text-primary tracking-widest drop-shadow-md" id="videoModalTitle">Featured Video</span>
+      <button aria-label="Close video" class="w-8 h-8 rounded-full bg-surface-container-high/80 hover:bg-surface-bright text-on-surface hover:text-primary flex items-center justify-center transition-colors cursor-pointer backdrop-blur-sm pointer-events-auto" id="closeVideoModalBtn">
+        <span class="material-symbols-outlined text-[18px]">close</span>
+      </button>
+    </div>
+    <div class="w-full aspect-video bg-black flex items-center justify-center relative" id="videoPlayerContainer">
+    </div>
+  </div>
+</div>
+
+<div class="fixed bottom-8 left-1/2 -translate-x-1/2 z-[110] flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-surface-container-highest/95 text-primary border border-primary/40 shadow-2xl backdrop-blur-xl opacity-0 pointer-events-none translate-y-4 transition-all duration-300 font-body-sm text-body-sm" id="toastNotification">
+<span class="material-symbols-outlined text-[18px] text-primary" id="toastIcon">check_circle</span>
+<span id="toastMessage">URL Copied to Clipboard!</span>
+</div>
+<script>
+  function showToast(message = "URL Copied to Clipboard!") {
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMessage');
+    if (!toast) return;
+    toastMsg.textContent = message;
+    toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+    toast.classList.add('opacity-100', 'translate-y-0');
+    
+    setTimeout(() => {
+      toast.classList.remove('opacity-100', 'translate-y-0');
+      toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+    }, 2400);
+  }
+
+  function handleSendMessage() {
+    const input = document.getElementById('userMessage');
+    const btn = document.getElementById('subscribeBtn');
+    if (input && input.value) {
+      const originalText = btn.innerHTML;
+      btn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">progress_activity</span>';
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+        const message = encodeURIComponent(input.value);
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        if (isMobile) {
+          window.location.href = `mailto:mosharofafride23@gmail.com?body=${message}`;
+          showToast("Opening Email App...");
+        } else {
+          window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=mosharofafride23@gmail.com&body=${message}`, '_blank');
+          showToast("Opening Web Gmail...");
+        }
+        input.value = '';
+      }, 500);
+    }
+  }
+
+  function executeCopy(textToCopy) {
+    const url = textToCopy || window.location.href;
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(() => {
+        showToast("URL Copied to Clipboard!");
+      }).catch(() => {
+        legacyCopy(url);
+      });
+    } else {
+      legacyCopy(url);
+    }
+  }
+
+  function legacyCopy(url) {
+    const tempInput = document.createElement('input');
+    tempInput.value = url;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    try {
+      document.execCommand('copy');
+      showToast("URL Copied to Clipboard!");
+    } catch (e) {}
+    document.body.removeChild(tempInput);
+  }
+
+  const copyProfileBtn = document.getElementById('copyProfileLinkBtn');
+  const copyLinkIcon = document.getElementById('copyLinkIcon');
+  if (copyProfileBtn) {
+    copyProfileBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      executeCopy(window.location.href);
+      if (copyLinkIcon) {
+        copyLinkIcon.textContent = 'check';
+        copyLinkIcon.classList.add('text-primary');
+        setTimeout(() => {
+          copyLinkIcon.textContent = 'link';
+          copyLinkIcon.classList.remove('text-primary');
+        }, 2000);
+      }
+    });
+  }
+
+  document.getElementById('copyQrUrlBtn')?.addEventListener('click', () => {
+    executeCopy(window.location.href);
+  });
+
+  async function downloadQR() {
+    const btn = document.getElementById('downloadQrBtn');
+    const originalHtml = btn ? btn.innerHTML : '';
+    if(btn) btn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">progress_activity</span><span>Saving...</span>';
+    
+    try {
+      const response = await fetch(document.getElementById('qrCodeImage').src);
+      const blob = await response.blob();
+      const blobUrl = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = blobUrl;
+      a.download = 'NEXUS_NOIR_QR.png';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(blobUrl);
+      showToast("QR Code Downloaded!");
+    } catch (error) {
+      const a = document.createElement('a');
+      a.href = document.getElementById('qrCodeImage').src;
+      a.target = '_blank';
+      a.download = 'NEXUS_NOIR_QR.png';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+    
+    if(btn) btn.innerHTML = originalHtml;
+  }
+
+  document.getElementById('downloadQrBtn')?.addEventListener('click', downloadQR);
+  document.getElementById('qrCodeImage')?.addEventListener('click', downloadQR);
+
+  document.getElementById('navShareBtn')?.addEventListener('click', () => {
+    if (navigator.share) {
+      navigator.share({
+        title: 'MOSHAROFAFRIDI | Sovereign Portfolio',
+        url: window.location.href
+      }).catch(() => {});
+    } else {
+      executeCopy(window.location.href);
+    }
+  });
+
+  const playVideoBtn = document.getElementById('playVideoBtn');
+  const videoModal = document.getElementById('videoModalOverlay');
+  const videoContainer = document.getElementById('videoModalContainer');
+  const closeVideoBtn = document.getElementById('closeVideoModalBtn');
+  const playerContainer = document.getElementById('videoPlayerContainer');
+
+  const defaultVideoUrl = "https://files.catbox.moe/ekxw0o.mp4";
+
+  function getEmbedCode(url) {
+    const ytMatch = url.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i);
+    if (ytMatch && ytMatch[1]) {
+      return `<iframe class="w-full h-full absolute inset-0" src="https://www.youtube-nocookie.com/embed/${ytMatch[1]}?autoplay=1&loop=1&playlist=${ytMatch[1]}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+    } else if (url.match(/\.(mp4|webm|ogg)$/i)) {
+      return `<video class="w-full h-auto max-h-[80vh] outline-none" controls autoplay loop><source src="${url}" type="video/mp4">Your browser does not support the video tag.</video>`;
+    } else {
+      return `<iframe class="w-full h-full absolute inset-0" src="${url}" frameborder="0" allowfullscreen></iframe>`;
+    }
+  }
+
+  function openVideoModal() {
+    if (videoModal) {
+      if (defaultVideoUrl.includes('/shorts/')) {
+        playerContainer.className = 'w-full sm:w-[400px] mx-auto aspect-[9/16] bg-black flex items-center justify-center relative rounded-b-xl overflow-hidden';
+      } else if (defaultVideoUrl.match(/\.(mp4|webm|ogg)$/i)) {
+        playerContainer.className = 'w-full h-auto bg-black flex items-center justify-center relative rounded-b-xl overflow-hidden';
+      } else {
+        playerContainer.className = 'w-full aspect-video bg-black flex items-center justify-center relative rounded-b-xl overflow-hidden';
+      }
+      playerContainer.innerHTML = getEmbedCode(defaultVideoUrl);
+      videoModal.classList.remove('opacity-0', 'pointer-events-none');
+      videoModal.classList.add('opacity-100');
+    }
+    if (videoContainer) {
+      videoContainer.classList.remove('scale-95');
+      videoContainer.classList.add('scale-100');
+    }
+  }
+
+  function closeVideoModal() {
+    if (videoModal) {
+      videoModal.classList.remove('opacity-100');
+      videoModal.classList.add('opacity-0', 'pointer-events-none');
+      setTimeout(() => { playerContainer.innerHTML = ''; }, 300);
+    }
+    if (videoContainer) {
+      videoContainer.classList.remove('scale-100');
+      videoContainer.classList.add('scale-95');
+    }
+  }
+
+  playVideoBtn?.addEventListener('click', openVideoModal);
+  closeVideoBtn?.addEventListener('click', closeVideoModal);
+
+
+  const qrBtn = document.getElementById('qrCodeProfileBtn');
+  const qrModal = document.getElementById('qrModalOverlay');
+  const qrContainer = document.getElementById('qrModalContainer');
+  const closeQrBtn = document.getElementById('closeQrModalBtn');
+  const qrImg = document.getElementById('qrCodeImage');
+
+  function openQrModal() {
+    const currentUrl = encodeURIComponent(window.location.href);
+    if (qrImg) {
+      qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=${currentUrl}&color=00ffff&bgcolor=131314&margin=2`;
+    }
+    if (qrModal) {
+      qrModal.classList.remove('opacity-0', 'pointer-events-none');
+      qrModal.classList.add('opacity-100');
+    }
+    if (qrContainer) {
+      qrContainer.classList.remove('scale-95');
+      qrContainer.classList.add('scale-100');
+    }
+  }
+
+  function closeQrModal() {
+    if (qrModal) {
+      qrModal.classList.remove('opacity-100');
+      qrModal.classList.add('opacity-0', 'pointer-events-none');
+    }
+    if (qrContainer) {
+      qrContainer.classList.remove('scale-100');
+      qrContainer.classList.add('scale-95');
+    }
+  }
+
+  qrBtn?.addEventListener('click', openQrModal);
+  closeQrBtn?.addEventListener('click', closeQrModal);
+
+  qrModal?.addEventListener('click', (e) => {
+    if (e.target === qrModal) {
+      closeQrModal();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && qrModal && !qrModal.classList.contains('pointer-events-none')) {
+      closeQrModal();
+    }
+  });
+</script></div></main><footer class="relative z-10 w-full bg-surface-container-lowest/90 py-space-xl"><div class="max-w-[640px] mx-auto px-margin flex flex-col items-center gap-space-md text-center"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-tertiary-fixed-dim hover:text-primary cursor-pointer transition-colors text-[18px]">shield</span><span class="material-symbols-outlined text-tertiary-fixed-dim hover:text-primary cursor-pointer transition-colors text-[18px]">lock</span><span class="material-symbols-outlined text-tertiary-fixed-dim hover:text-primary cursor-pointer transition-colors text-[18px]">diamond</span></div><div class="font-label-caps text-label-caps uppercase text-outline tracking-widest">NEXUS NOIR • PRIVATE ATELIER • STRICT CONFIDENTIALITY</div><div class="font-body-sm text-body-sm text-on-surface-variant">© 2025 NEXUS NOIR. All private sovereign endeavors reserved.</div></div></footer>
+</body></html>
+    
